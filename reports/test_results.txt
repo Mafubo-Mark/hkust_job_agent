@@ -1,0 +1,81 @@
+test_bounded_repeated_tool_calls (test_dialogue_graph.DialogueTests.test_bounded_repeated_tool_calls)
+A model that keeps calling tools stops after eight decisions rather than looping forever. ... ok
+test_changed_data_clears_referents (test_dialogue_graph.DialogueTests.test_changed_data_clears_referents)
+A new resume invalidates previous selected jobs and history on the same thread. ... ok
+test_invalid_tool_arguments_report_failure (test_dialogue_graph.DialogueTests.test_invalid_tool_arguments_report_failure)
+A malformed model call yields an honest error, with no ranking or invented success. ... ok
+test_multiple_specialists (test_dialogue_graph.DialogueTests.test_multiple_specialists)
+One supervisor plan can hand off to two independent specialists in order. ... ok
+test_multiturn_restart_and_thread_isolation (test_dialogue_graph.DialogueTests.test_multiturn_restart_and_thread_isolation)
+Run top jobs -> second job -> restart -> resume edits -> company, and isolate another thread. ... ok
+test_refusal_and_tools_are_real (test_dialogue_graph.DialogueTests.test_refusal_and_tools_are_real)
+An out-of-scope reply requires no tool and cannot show a fabricated tool-use label. ... ok
+test_specialist_tool_allowlist (test_dialogue_graph.DialogueTests.test_specialist_tool_allowlist)
+A resume specialist cannot invoke an unapproved search tool. ... ok
+test_blank_and_encrypted_pdf_rejected (test_matcher.MatcherTests.test_blank_and_encrypted_pdf_rejected)
+Image-only/blank and encrypted PDFs are rejected without OCR. ... ok
+test_collection_uses_ref_and_normalization (test_matcher.MatcherTests.test_collection_uses_ref_and_normalization)
+The retained collection pipeline parses Ref No. and normalized requirements. ... Page 1: 1 valid, 0 unknown, 0 expired
+  Details 1/1; 1 records; 0 failed; 0.0s
+ok
+test_evidence_scoring_and_cache (test_matcher.MatcherTests.test_evidence_scoring_and_cache)
+Real scoring code computes 100 from cited evidence and skips unchanged cached jobs. ... ok
+test_failed_atomic_write_preserves_file (test_matcher.MatcherTests.test_failed_atomic_write_preserves_file)
+A failed JSON replacement leaves the old file and removes temporary siblings. ... ok
+test_invented_quote_and_missing_coverage_rejected (test_matcher.MatcherTests.test_invented_quote_and_missing_coverage_rejected)
+The scorer rejects invented resume evidence and omitted requirements. ... ok
+test_real_pdf_extraction_and_fingerprint (test_matcher.MatcherTests.test_real_pdf_extraction_and_fingerprint)
+pypdf extracts real text and fingerprints the PDF bytes for score-cache invalidation. ... ok
+test_standalone_tool_three_outputs (test_matcher.MatcherTests.test_standalone_tool_three_outputs)
+The portable matcher still works independently and uses the PRD's three JSON filenames. ... ok
+test_full_preparation_closes_browser (test_preparation_graph.PreparationTests.test_full_preparation_closes_browser)
+A successful scrape passes filters and always closes Chrome before scoring/indexing. ... ok
+test_invalid_pdf_prevents_browser_and_scoring (test_preparation_graph.PreparationTests.test_invalid_pdf_prevents_browser_and_scoring)
+Rejected image-only PDFs never reach scraping or paid scoring. ... ok
+test_saved_pipeline_outputs_and_no_browser (test_preparation_graph.PreparationTests.test_saved_pipeline_outputs_and_no_browser)
+The real preparation graph publishes four required data files and both vector collections. ... ok
+test_scoring_failure_keeps_old_outputs (test_preparation_graph.PreparationTests.test_scoring_failure_keeps_old_outputs)
+Failed external scoring preserves all previously prepared files and their readiness marker. ... ok
+test_deepseek_native_calls_and_json_contract (test_providers.ProviderTests.test_deepseek_native_calls_and_json_contract)
+Native tool schemas, JSON mode, and disabled thinking reach the real SDK adapter. ... ok
+test_truncated_response_rejected (test_providers.ProviderTests.test_truncated_response_rejected)
+Incomplete provider output cannot become a successful agent answer. ... ok
+test_empty_index (test_rag.RagTests.test_empty_index)
+An empty filtered board remains a valid, searchable empty dataset. ... ok
+test_index_reuse_and_stale_detection (test_rag.RagTests.test_index_reuse_and_stale_detection)
+Unchanged sources skip embedding and changed sources cannot query a stale index. ... ok
+test_misaligned_names_rejected (test_rag.RagTests.test_misaligned_names_rejected)
+A reordered title-only file cannot silently map a title to the wrong job. ... ok
+test_mixed_name_and_ambiguity (test_rag.RagTests.test_mixed_name_and_ambiguity)
+Semantic candidates feed disambiguation, and unrecognized IDs are never accepted. ... ok
+test_ordinal_pronoun_and_reference (test_rag.RagTests.test_ordinal_pronoun_and_reference)
+Ordinals use displayed order, pronouns use selection, and Ref No. is exact. ... ok
+test_reindex_cannot_bless_a_changed_resume (test_rag.RagTests.test_reindex_cannot_bless_a_changed_resume)
+Changing resume.txt requires new scoring, not just a fresh index marker. ... ok
+test_two_indexes_and_stable_ids (test_rag.RagTests.test_two_indexes_and_stable_ids)
+Both indexes return original IDs and all jobs, including chunked descriptions. ... ok
+test_argument_validation (test_tools.ToolsTests.test_argument_validation)
+Model tool calls cannot inject unrecognized arguments or coerce strings into indices. ... ok
+test_find_checks_every_job (test_tools.ToolsTests.test_find_checks_every_job)
+All 12 jobs are examined, including results beyond a usual top-eight RAG cutoff. ... ok
+test_job_advice_uses_saved_evidence (test_tools.ToolsTests.test_job_advice_uses_saved_evidence)
+The advice model receives the selected full job, actual score, and saved resume. ... ok
+test_oversized_summary_preserves_file (test_tools.ToolsTests.test_oversized_summary_preserves_file)
+Repeated model failures to obey the limit cannot replace the existing resume. ... ok
+test_qianfan_request_contract (test_tools.ToolsTests.test_qianfan_request_contract)
+The provider adapter sends the documented endpoint, authentication, and request shape. ... ok
+test_rank_range_and_exact_fields (test_tools.ToolsTests.test_rank_range_and_exact_fields)
+Ranges are 1-based inclusive, clamped to availability, and show true saved fields. ... ok
+test_search_sources_and_scope (test_tools.ToolsTests.test_search_sources_and_scope)
+Web answers contain actual source URLs and unrelated questions never invoke search. ... ok
+test_short_and_long_summary (test_tools.ToolsTests.test_short_and_long_summary)
+Short resumes bypass AI; long resumes are summarized and counted across languages. ... ok
+test_unsupported_requirement_quote_rejected (test_tools.ToolsTests.test_unsupported_requirement_quote_rejected)
+A fabricated source quote cannot be accepted as a matching criterion. ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 1.004s
+
+OK
+Assessed 1/1 jobs.
+Assessed 1/1 jobs.

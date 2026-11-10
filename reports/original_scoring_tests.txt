@@ -1,0 +1,38 @@
+Page 1: 1 valid, 0 unknown, 0 expired
+  Details 1/1; 1 records; 0 failed; 0.0s
+Assessed 1/1 jobs.
+Assessed 1/1 jobs.
+[1/1] Example | Developer
+Retrying score: attempt 2/3.
+Retrying score: attempt 3/3.
+[1/1] Example | Developer
+overall score: 80/100
+recommendation level: Apply with targeted resume revision
+Saved 1 scores.
+[1/1] Example | Developer
+Reusing saved score.
+overall score: 80/100
+recommendation level: Apply with targeted resume revision
+Saved 1 scores.
+[1/1] Example | Developer
+overall score: 80/100
+recommendation level: Apply with targeted resume revision
+Saved 1 scores.
+[1/2] Example | Developer
+overall score: 70/100
+recommendation level: Apply with targeted resume revision
+Saved 1 scores.
+[2/2] Example | Developer
+overall score: 90/100
+recommendation level: Strongly recommend applying
+Saved 2 scores.
+Assessed 1/2 jobs.
+Retrying assessment 2/2: validation failed; attempt 2/4.
+Retrying assessment 2/2: validation failed; attempt 3/4.
+Retrying assessment 2/2: validation failed; attempt 4/4.
+Retrying assessment 1/1: validation failed; attempt 2/4.
+----------------------------------------------------------------------
+Ran 44 tests in 0.986s
+
+OK
+Assessed 1/1 jobs.
